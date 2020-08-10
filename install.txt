@@ -8,3 +8,10 @@ pip install --no-deps gpytorch==1.0.0
 
 3, error: NotImplementedError: Got <class 'tuple'>, but expected numpy array or torch tensor.
 solve:
+(1)eval_reward = eval_policy(policy, args.env_name, args.seed, 50)
+writer.add_scalar("Episode reward", eval_reward, episode_num)
+(2)def eval_policy(): 
+num_success=[0,0], avg_reward = 0.0, return avg_reward, num_success
+format (0,[0,0])
+(3)writer.add_scalar("Episode reward", eval_reward[0], episode_num)
+
