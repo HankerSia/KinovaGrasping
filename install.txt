@@ -1,3 +1,9 @@
 error :No module named 'scipy.spatial.transform'
 solve:
 pip install scipy==1.2.0
+
+
+error ImportError: cannot import name 'ApproximateGP' 
+
+solve:
+pip install --no-deps gpytorch==1.0.0
