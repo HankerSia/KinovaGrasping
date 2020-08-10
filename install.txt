@@ -1,9 +1,10 @@
-error :No module named 'scipy.spatial.transform'
+1, error: No module named 'scipy.spatial.transform'
 solve:
 pip install scipy==1.2.0
 
-
-error ImportError: cannot import name 'ApproximateGP' 
-
+2, error: ImportError: cannot import name 'ApproximateGP' 
 solve:
 pip install --no-deps gpytorch==1.0.0
+
+3, error: NotImplementedError: Got <class 'tuple'>, but expected numpy array or torch tensor.
+solve:
